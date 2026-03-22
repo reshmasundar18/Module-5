@@ -3,12 +3,12 @@
 
 ---
 
-### AIM  
+### AIM:  
 To write a Python code to create a class for a person with a parameterized constructor, which will take the `name` and `userid` of the person as parameters and print the `userid` of the person.
 
 ---
 
-### ALGORITHM
+### ALGORITHM:
 
 1. Begin the program.  
 2. Define a `person` class.  
@@ -21,12 +21,22 @@ To write a Python code to create a class for a person with a parameterized const
 
 ---
 
-### PROGRAM
-
+### PROGRAM:
 ```
-
+class person:
+    def __init__(self,id,name):
+         self.id=id
+         self.name=name
+    def display(self):
+        print("Hello my id is :",id)
+        print("My name is :",name)
+id=int(input())
+name=input()
+c=person(name,id)
+c.display()
 ```
+### OUTPUT:
+<img width="822" height="208" alt="image" src="https://github.com/user-attachments/assets/9d77a21f-7794-483e-ae6b-270aa17de738" />
 
-### OUTPUT
-
-### RESULT
+### RESULT:
+Thus a python program to create a class for a person with a parameterized constructorhas been successfully implemented.
