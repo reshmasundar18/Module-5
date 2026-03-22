@@ -3,12 +3,12 @@
 
 ---
 
-### AIM  
+### AIM:  
 To create a Python class `Student` with a destructor.
 
 ---
 
-### ALGORITHM
+### ALGORITHM:
 
 1. Begin the program.  
 2. Define the `student` class.  
@@ -19,13 +19,29 @@ To create a Python class `Student` with a destructor.
 
 ---
 
-### PROGRAM
-
+### PROGRAM:
 ```
+class Student:
 
+    # constructor
+    def __init__(self, name):
+        print('Inside Constructor')
+        self.name = name
+        print('Object initialized')
+
+    def show(self):
+        print('Hello, my name is', self.name)
+    def __del__(self):
+        print("Inside destructor\nObject destroyed")
+# create object
+s1 = Student('Emma')
+s1.show()
+
+# delete object
+del s1
 ```
+### OUTPUT:
+<img width="687" height="268" alt="image" src="https://github.com/user-attachments/assets/b70f0180-7596-4391-aaad-466f0ebcac1b" />
 
-### OUTPUT
-
-
-### RESULT
+### RESULT:
+Thus Add the destructor in the following python code to delete the instance of the class has been successfully implemented.
